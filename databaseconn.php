@@ -1,5 +1,4 @@
 <?php
-
     if(!defined('__Miha__')){
         die("Hacking attempt");
     }

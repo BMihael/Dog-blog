@@ -1,10 +1,10 @@
 <?php
-print'
+    require_once 'php/queries/fetch_gallery_images.php';
+
+    print'
     <h1>Gallery</h1>
     <div id="gallery">';
 
-    $query = "SELECT * from gallery where archive=0";
-    $result = mysqli_query($mysql, $query);
     while($row = mysqli_fetch_array($result)){
         print'
         <figure id="NULL">

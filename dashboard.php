@@ -133,6 +133,7 @@
         print'
         <h3>All your posts</h3>
         <table class="table_custom container_around_elements">
+        <thead>
         <tr>
             <th>Id</th>
             <th>Title</th>
@@ -140,7 +141,9 @@
             <th>Date</th>
             <th>By user</th>
             <th>Action</th>
-        </tr>';
+        </tr>
+        </thead>
+        <tbody>';
         while($row = mysqli_fetch_array($resultForUserPosts)){
             print'
             <tr>
@@ -194,6 +197,7 @@
                         <input type="text" id="picture" name="picture" value= "'.$row_picture.'"placeholder="Picture..." required>
                     </td>
                 </tr>
+            </tbody>
             </table>
             <button class="button_submit" type="submit" name="updatePost">Update post</button>
         </form>
@@ -208,6 +212,7 @@
         print'
         <h2>All users posts</h2>
         <table class="table_custom container_around_elements">
+        <thead>
         <tr>
             <th>Id</th>
             <th>Title</th>
@@ -215,7 +220,9 @@
             <th>Date</th>
             <th>By user</th>
             <th>Action</th>
-        </tr>';
+        </tr>
+        </thead>
+        <tbody>';
         while($row = mysqli_fetch_array($resultForAllUserPosts)){
             print'
             <tr>
@@ -231,6 +238,7 @@
         </tr>';
         }
         print'
+        </tbody>
         </table>
         </div>
         <br>';

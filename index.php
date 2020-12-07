@@ -70,7 +70,7 @@
     print'
     </main>
     <footer>
-      Copyright © ' . date("Y") . ' Mihael Belko
+      Copyright © ' . date("Y") . '
       <a href="https://www.github.com/BMihael" target="_blank"><img src="images/socialmedia/github.svg" alt="Github" title="Github" style="width:24px; margin-top:0.4em; background-color: white;"></a>
     </footer>
   </body>
